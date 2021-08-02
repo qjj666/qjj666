@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main(void)
+{
+	int b,c,d,e,g;
+	int a[3][3];
+	for (b = 0; b < 3; b++)
+	{
+		for (c = 0; c < 3; c++)
+		{
+			printf("请输入数字\n");
+			scanf("%d", &a[b][c]);//利用循环来进行数据输入
+		}
+	}
+	printf("\n\n\n");
+	for (d = 0; d < 3; d++)
+	{
+		for (e = 0; e < 3; e++)
+		{
+			printf("%d\n", a[d][e]);
+		}
+	}
+	printf("\n\n\n\n");
+	int* f;
+	f = &a[0][0];
+	for (g = 0; g < 9; g++)
+	{
+		（"%p\n"，（f + g））//在这里利用指针的移动来实现地址的打印
+	}
+	return 0;
+}
