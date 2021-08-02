@@ -1,4 +1,5 @@
-- 👋 Hi, I’m @qjj666
+- 👋 Hi, I’m Qian junjie
+- now I am a university student in AnHui university of science and technology. 
 - 👀 I’m interested in C and python or C++
 - 🌱 I’m currently learning JAVA and C point
 - 💞️ I’m looking to collaborate on improve my C ability especially in C point
