@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @qjj666
 - 👀 I’m interested in C and python or C++
-- 🌱 I’m currently learning JAVA
-- 💞️ I’m looking to collaborate on improve my C ability
+- 🌱 I’m currently learning JAVA and C point
+- 💞️ I’m looking to collaborate on improve my C ability especially in C point
 - 📫 How to reach me 1320383949@qq.com
 
 <!---
