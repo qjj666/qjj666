@@ -1,0 +1,34 @@
+import json
+import collections
+with open("all.json",'r',encoding='utf-8') as load_f:
+    load_dict = json.load(load_f)
+#for c in load_dict:
+ #   print(c)
+ls=[]
+string=''
+all={}
+no={' ','，','。','（','）'}
+print(type(load_dict))
+for a in load_dict:
+    print(a)
+    a.pop("id")#删除最后一个键值(这一段不要也行应为后面返回了我想要的键值)
+    print(a.values())
+    st1=a.get('author')
+    st2=a.get('paragraphs')
+    st3=a.get('title')
+    ls.append(st1)
+    ls.append(st2)
+    ls.append(st3)
+for b in ls:
+    print(b)
+    string+=''.join(b)
+print(string)#去除所有标点符号的完整字符串
+for word in string:
+    if word in no:
+        all[word]=0#对不需要的进行剔除利用的是no集合
+    all[word]=all.get(word,0)+1
+item=list(all.items())
+item.sort(key=lambda x:x[1] ,reverse=True)
+for i in range(100):#先统计10个词（自主修改）
+    ri,co=item[i]
+    print("{0:<10}{1:>5}".format(ri,co))
